@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="ssm@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="information_schema">
+      <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="mysql"/>
+    <schema id="4" parent="1" name="performance_schema"/>
+    <schema id="5" parent="1" name="sakila"/>
+    <schema id="6" parent="1" name="ssm">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="7" parent="1" name="sys"/>
+    <schema id="8" parent="1" name="testsql"/>
+    <schema id="9" parent="1" name="world"/>
+    <schema id="10" parent="1" name="student"/>
+    <table id="11" parent="6" name="content"/>
+    <table id="12" parent="6" name="person"/>
+    <table id="13" parent="6" name="test_table"/>
+    <table id="14" parent="6" name="trx"/>
+    <column id="15" parent="11" name="id">
+      <Position>1</Position>
+      <Comment>主键</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="16" parent="11" name="price">
+      <Position>2</Position>
+      <Comment>当前价格</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="17" parent="11" name="title">
+      <Position>3</Position>
+      <Comment>标题</Comment>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="18" parent="11" name="icon">
+      <Position>4</Position>
+      <Comment>图片</Comment>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="19" parent="11" name="abstract">
+      <Position>5</Position>
+      <Comment>摘要</Comment>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <column id="20" parent="11" name="text">
+      <Position>6</Position>
+      <Comment>正文</Comment>
+      <DataType>longtext|0</DataType>
+    </column>
+    <key id="21" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="22" parent="12" name="id">
+      <Position>1</Position>
+      <Comment>主键</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="23" parent="12" name="userName">
+      <Position>2</Position>
+      <Comment>用户名</Comment>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="24" parent="12" name="password">
+      <Position>3</Position>
+      <Comment>密码md5加密</Comment>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="25" parent="12" name="nickName">
+      <Position>4</Position>
+      <Comment>用户昵称</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="26" parent="12" name="userType">
+      <Position>5</Position>
+      <Comment>类型，买家0，卖家1</Comment>
+      <DataType>tinyint(3)|0</DataType>
+    </column>
+    <key id="27" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="28" parent="13" name="idnew_table">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <key id="29" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idnew_table</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="30" parent="14" name="id">
+      <Position>1</Position>
+      <Comment>主键</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="31" parent="14" name="contentId">
+      <Position>2</Position>
+      <Comment>内容ID</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="32" parent="14" name="personId">
+      <Position>3</Position>
+      <Comment>用户ID</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="33" parent="14" name="buyprice">
+      <Position>4</Position>
+      <Comment>购买价格</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="34" parent="14" name="num">
+      <Position>5</Position>
+      <Comment>交易数量</Comment>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="35" parent="14" name="time">
+      <Position>6</Position>
+      <Comment>购买时间</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <key id="36" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
